@@ -1,4 +1,4 @@
-package main.neetCodeIO;
+package main.neetCodeIO.Backtracking;
 
 import java.util.ArrayList;
 import java.util.List;

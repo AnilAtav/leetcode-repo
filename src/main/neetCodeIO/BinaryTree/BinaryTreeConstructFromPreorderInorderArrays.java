@@ -1,4 +1,6 @@
-package main.neetCodeIO;
+package main.neetCodeIO.BinaryTree;
+
+import main.neetCodeIO.TreeNode;
 
 import java.util.Arrays;
 

@@ -1,4 +1,5 @@
-package main.neetCodeIO;
+package main.neetCodeIO.BinaryTree;
+import main.neetCodeIO.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

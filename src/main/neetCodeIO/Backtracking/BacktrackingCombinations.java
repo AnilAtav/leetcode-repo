@@ -1,4 +1,4 @@
-package main.neetCodeIO;
+package main.neetCodeIO.Backtracking;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class BacktrackingCombinations {
         backtrack(1, n, k, path, res);
         return res;
     }
-    public void backtrack(int index, int n, int k, List<Integer> path, List<List<Integer>> res) {
+    private void backtrack(int index, int n, int k, List<Integer> path, List<List<Integer>> res) {
         if (path.size() == k) {
             res.add(new ArrayList<>(path));
             return;

@@ -2,7 +2,6 @@ package main.neetCodeIO;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 public class BinarySearchTreeValidate {
     // in-order traversal technic recursive - for iterative check Kth element class | https://www.youtube.com/watch?v=sLoZJ2E4ZDs
