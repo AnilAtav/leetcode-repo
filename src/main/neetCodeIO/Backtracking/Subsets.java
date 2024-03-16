@@ -1,6 +1,7 @@
 package main.neetCodeIO.Backtracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Subsets {
@@ -26,6 +27,35 @@ public class Subsets {
             backtrack(resultSet, tempSet, nums, i+1);
 
             tempSet.remove(tempSet.size()-1);
+        }
+    }
+
+
+
+
+    //Subsets II
+    //Input: nums = [1,2,2]
+    //Output: [[],[1],[1,2],[1,2,2],[2],[2,2]]
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        Arrays.sort(nums);
+        List<List<Integer>> result = new ArrayList<>();
+        backtraceWithDup(result, new ArrayList<>(), nums, 0);
+        return result;
+    }
+
+    void backtraceWithDup(List<List<Integer>> result, List<Integer> tempList, int[] nums, int start) {
+        if (result.contains(tempList))
+            return;
+
+        result.add(new ArrayList<>(tempList));
+
+        for (int i = start; i < nums.length; i++) {
+
+            tempList.add(nums[i]);
+
+            backtraceWithDup(result, tempList, nums, i + 1);
+
+            tempList.remove(tempList.size() - 1);
         }
     }
 

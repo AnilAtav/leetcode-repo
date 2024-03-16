@@ -18,7 +18,6 @@ public class BacktrackingWordSearch {
                 }
             }
         }
-
         return false; // If not found in any cell, return false
     }
 

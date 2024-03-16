@@ -5,6 +5,8 @@ import java.util.List;
 
 public class BacktracingPhoneLetterCombinations {
 
+    //Input: digits = "23"
+    //Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
     private static final String[] keypad = {
             "0", "1", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
     };

@@ -1,9 +1,39 @@
 package main.neetCodeIO.Backtracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class BacktrackingCombinationSum {
+    private List<List<Integer>> ans = new ArrayList<>();
+    private ArrayList<Integer> ls = new ArrayList<>();
+
+    //find all unique combinations in candidates where the candidate numbers sum to target.
+    //Each number in candidates may only be used once in the combination.
+    //Input: candidates = [10,1,2,7,6,1,5], target = 8
+    //Output: [[1,1,6],[1,2,5],[1,7],[2,6]]
+    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
+        Arrays.sort(candidates);
+        cum2(candidates,target,0);
+        return ans;
+    }
+    public void cum2(int[] candidates, int target, int start) {
+        if (target == 0) {
+            ans.add(new ArrayList<>(ls));
+            return;
+        }
+        for (int i = start; i < candidates.length; i++) {
+            //if we are at the starting position and if its a duplicate
+            if (i > start && candidates[i] == candidates[i - 1])
+                continue;
+            if (candidates[i] <= target) {
+                ls.add(candidates[i]);
+                cum2(candidates, target - candidates[i], i+1);
+                ls.remove(ls.size() - 1);
+            }
+        }
+    }
+
 
     //Input: candidates = [2,3,6,7], target = 7
     //Output: [[2,2,3],[7]]
@@ -17,8 +47,6 @@ public class BacktrackingCombinationSum {
         return ans;
     }
 
-    private List<List<Integer>> ans = new ArrayList<>();
-    private ArrayList<Integer> ls = new ArrayList<>();
     public void cum(int[] c, int target, int start) {
         System.out.println("Current state: ls=" + ls + ", target=" + target + ", start=" + start);
 
