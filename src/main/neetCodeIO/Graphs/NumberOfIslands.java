@@ -13,6 +13,7 @@ import java.util.Queue;
 // Output: 2
 public class NumberOfIslands {
 
+    // efficient leetcode solution
     public int numIslandsLeetSolution(char[][] grid) {
         if (grid == null || grid.length == 0) {
             return 0;
@@ -54,6 +55,9 @@ public class NumberOfIslands {
         }
     }
 
+
+
+    // iterative bfs and dfs solution
     public int numIslands(char[][] grid) {
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
             return 0;
