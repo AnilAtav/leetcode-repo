@@ -1,4 +1,4 @@
-package main.neetCodeIO;
+package main.neetCodeIO.LinkedList;
 
 import java.util.*;
 

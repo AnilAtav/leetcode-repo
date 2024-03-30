@@ -1,6 +1,7 @@
-package main.neetCodeIO;
+package main.neetCodeIO.LinkedList;
 
 public class LinkedListMergeTwoLists {
+
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
         ListNode newList = new ListNode(Integer.MIN_VALUE);

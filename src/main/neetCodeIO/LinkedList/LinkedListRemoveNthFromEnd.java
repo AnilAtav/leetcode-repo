@@ -1,7 +1,4 @@
-package main.neetCodeIO;
-
-import java.util.LinkedList;
-import java.util.List;
+package main.neetCodeIO.LinkedList;
 
 public class LinkedListRemoveNthFromEnd {
 

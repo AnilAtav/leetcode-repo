@@ -1,5 +1,7 @@
-package main.neetCodeIO;
+package main.neetCodeIO.BinarySearchTree;
 
+
+import main.neetCodeIO.TreeNode;
 
 public class BinarySearchTreeDeleteNode {
 

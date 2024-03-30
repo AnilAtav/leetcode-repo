@@ -1,4 +1,4 @@
-package main.neetCodeIO;
+package main.neetCodeIO.SlidingWindow;
 
 public class SlidingWindowAMaxProfit {
     //Input: prices = [7,1,5,3,6,4]

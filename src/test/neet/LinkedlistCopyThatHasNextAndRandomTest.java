@@ -1,5 +1,5 @@
 package test.neet;
-import main.neetCodeIO.LinkedlistCopyThatHasNextAndRandom;
+import main.neetCodeIO.LinkedList.LinkedlistCopyThatHasNextAndRandom;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package main.neetCodeIO;
+package main.neetCodeIO.SlidingWindow;
 
 import java.util.HashMap;
 import java.util.Map;
