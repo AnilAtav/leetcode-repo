@@ -1,9 +1,35 @@
-package main.neetCodeIO;
+package main.neetCodeIO.Greedy;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class JumpGame123 {
+
+    //Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
+    //Output: 6
+    //Explanation: The subarray [4,-1,2,1] has the largest sum 6.
+    public int maxSubArray(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        int n = nums.length;
+
+        // Initialize variables to keep track of current sum and maximum sum
+        int currSum = nums[0]; // Start with the first element
+        int maxSum = nums[0]; // Initially, the maximum sum is the value of the first element
+
+        // Iterate through the array starting from the second element
+        for (int i = 1; i < n; i++) {
+            // Update the current sum by adding the current element or starting a new subarray
+            currSum = Math.max(nums[i], currSum + nums[i]);
+            // Update the maximum sum if the current sum is greater
+            maxSum = Math.max(maxSum, currSum);
+        }
+
+        return maxSum;
+    }
+
 
     //    jump1
     //    You are given an integer array nums. You are initially positioned at the array's first index, and each
@@ -24,7 +50,8 @@ public class JumpGame123 {
     // jump2
     // Input: nums = [2,3,1,1,4]
     // Output: 2
-    // Explanation: The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
+    // Explanation: The minimum number of jumps to reach the last index is 2.
+    // Jump 1 step from index 0 to 1, then 3 steps to the last index.
     public int jump(int[] nums) {
         if (nums.length == 1) {
             return 0;

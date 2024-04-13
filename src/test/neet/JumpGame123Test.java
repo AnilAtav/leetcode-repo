@@ -1,7 +1,6 @@
 package test.neet;
 
-import main.neetCodeIO.IsPalindrome;
-import main.neetCodeIO.JumpGame123;
+import main.neetCodeIO.Greedy.JumpGame123;
 import org.junit.Before;
 import org.junit.Test;
 
