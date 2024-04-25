@@ -1,9 +1,10 @@
-package main.neetCodeIO;
+package main.neetCodeIO.ArraysNHashing;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ArraysRomanToInt {
+public class RomanToInt {
+
     public int romanToInt(String s) {
         Map<Character, Integer> m = new HashMap<>();
 
@@ -18,6 +19,7 @@ public class ArraysRomanToInt {
         int ans = 0;
 
         for (int i = 0; i < s.length(); i++) {
+            // Check if the next character exists and its value is greater than the current character's value
             if (i < s.length() - 1 && m.get(s.charAt(i)) < m.get(s.charAt(i + 1))) {
                 ans -= m.get(s.charAt(i));
             } else {

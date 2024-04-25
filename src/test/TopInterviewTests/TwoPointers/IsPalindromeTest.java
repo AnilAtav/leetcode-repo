@@ -1,6 +1,6 @@
-package test.neet;
+package test.TopInterviewTests.TwoPointers;
 
-import main.neetCodeIO.IsPalindrome;
+import main.neetCodeIO.TwoPointers.IsPalindrome;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,22 +1,29 @@
-package test;
+package test.TopInterviewTests.ArraysNHashing;
 
 import main.neetCodeIO.ArraysNHashing.RomanToInt;
+import org.junit.Before;
 import org.junit.Test;
 
 
-public class aaTest {
+public class RomanToIntTest {
+
+    RomanToInt testObj;
+
+    @Before
+    public void setUp() {
+        testObj = new RomanToInt();
+    }
 
     @Test
     public void aaTest() {
 
-        RomanToInt solution = new RomanToInt();
 
         // Test cases
         String[] romanNumerals = {"III", "IV", "IX", "LVIII", "MCMXCIV"};
 
         // Iterate through the test cases
         for (String romanNumeral : romanNumerals) {
-            int result = solution.romanToInt(romanNumeral);
+            int result = testObj.romanToInt(romanNumeral);
             System.out.println("Roman numeral: " + romanNumeral + ", Integer value: " + result);
         }
     }

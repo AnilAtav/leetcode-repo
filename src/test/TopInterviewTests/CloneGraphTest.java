@@ -1,6 +1,5 @@
-package test.neet;
+package test.TopInterviewTests;
 
-import main.TwoSum;
 import main.neetCodeIO.Graphs.CloneGraph;
 import main.neetCodeIO.Graphs.GraphNode;
 import org.junit.Before;

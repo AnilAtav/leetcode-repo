@@ -1,4 +1,4 @@
-package test.neet;
+package test.TopInterviewTests;
 import main.neetCodeIO.LinkedList.LinkedlistCopyThatHasNextAndRandom;
 import org.junit.Before;
 import org.junit.Test;

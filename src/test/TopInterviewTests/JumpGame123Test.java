@@ -1,4 +1,4 @@
-package test.neet;
+package test.TopInterviewTests;
 
 import main.neetCodeIO.Greedy.JumpGame123;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package main.neetCodeIO;
+package main;
 
 import java.util.ArrayList;
 

@@ -1,7 +1,11 @@
-package main.neetCodeIO;
+package main.neetCodeIO.TwoPointers;
 
 public class IsPalindrome {
-    //2 pointer approach, one from start one from end. if both are same next loop..
+    //Input: s = "A man, a plan, a canal: Panama"
+    //Output: true
+    //Explanation: "amanaplanacanalpanama" is a palindrome.
+
+    //2 pointer approach, one from start one from end. if both are same check next couple..
     public boolean isPalindrome(String s) {
         if (s.isEmpty()) {
             return true;
